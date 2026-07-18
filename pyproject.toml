@@ -1,0 +1,9 @@
+[project]
+name = "mcp-server-magik-bi"
+version = "0.1.0"
+dependencies = [
+	"fastmcp",
+]
+
+[project.scripts]
+mcp_server = "mcp_server:main"

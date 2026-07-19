@@ -7,7 +7,8 @@ def generar_y_guardar_predicciones_por_local():
     print("Iniciando predicción diaria Multi-Local con Prophet...")
     start_time = time.time()
     
-    engine = create_engine("mysql+pymysql://mcp_user:constantino2003@localhost/datamart_magik")
+    # engine = create_engine("mysql+pymysql://mcp_user:constantino2003@localhost/datamart_magik")
+    engine = create_engine("mysql+pymysql://root:@localhost/datamart_magik")
     
     try:
         query = """

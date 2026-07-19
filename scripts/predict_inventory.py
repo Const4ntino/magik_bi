@@ -9,7 +9,8 @@ def generar_predicciones_inventario():
     print("Iniciando predicciónes de inventario SKU Multi-Local con Prophet...")
     start_time = time.time()
     
-    engine = create_engine("mysql+pymysql://mcp_user:constantino2003@localhost/datamart_magik")
+    # engine = create_engine("mysql+pymysql://mcp_user:constantino2003@localhost/datamart_magik")
+    engine = create_engine("mysql+pymysql://root:@localhost/datamart_magik")
     
     try:
         # Extraer toda el historial de ventas
